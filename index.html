@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App with Login</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container" id="loginContainer">
+        <h1>Login / Register</h1>
+        <input type="text" id="username" placeholder="Enter your username">
+        <input type="password" id="password" placeholder="Enter your password">
+        <button id="loginBtn" class="btn">Login</button>
+        <button id="registerBtn" class="btn">Register</button>
+        <p id="message"></p>
+    </div>
+
+    <div class="container hidden" id="quizContainer">
+        <h1>Quiz App</h1>
+        <div id="welcomeMessage"></div>
+        <button id="logoutBtn" class="btn">Logout</button>
+        <button id="playAgainBtn" class="btn hidden">Play Again</button>
+        <h2 id="question"></h2>
+        <div id="choices"></div>
+        <button id="nextBtn" class="btn hidden">Next</button>
+        <div class="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        <p id="score"></p>
+    </div>
+
+    <div class="container hidden" id="resultContainer">
+        <h2>Quiz Completed!</h2>
+        <p id="finalScore"></p>
+        <button id="restartBtn" class="btn">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
